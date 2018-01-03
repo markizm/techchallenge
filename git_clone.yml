@@ -1,0 +1,7 @@
+---
+
+- hosts: webservers
+  user: ubuntu 
+  tasks:
+  - name: clone repo
+    command: git clone https://github.com/jaustinhughey/hello-world-node-express 

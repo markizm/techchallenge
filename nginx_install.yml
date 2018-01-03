@@ -1,0 +1,20 @@
+---
+- hosts: webservers
+  tasks:
+  - name: install nginx
+    apt:
+      name: nginx
+      state: present
+  - name: configure proxy - delete default file
+    file: 
+      name: /etc/nginx/sites-available/default 
+      status: absent
+  - name: configure proxy - add new file w/ proxy settings
+    copy:
+      src: default
+      dest: /etc/nginx/sites-available/default
+      owner: root
+      group: root
+      mode: 0644
+  - name: start nginx
+    service: name=nginx enabled=yes state=restarted

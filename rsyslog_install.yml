@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  tasks:
+  - name: install rsyslog
+    apt:
+      name: rsyslog
+      state: latest

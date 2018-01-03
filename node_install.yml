@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  tasks:
+  - name: install node
+    apt:
+      name: node
+      state: present
+  - name: start node 
+    service: name=node enabled=yes state=restarted
