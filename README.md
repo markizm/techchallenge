@@ -17,7 +17,7 @@ $ ansible webservers -i inventory -m shell -a "/usr/bin/node /home/ubuntu/hello-
 The following shell script was added to crontab to have it start up automatically upon reboot: /home/ubuntu/hello-world-node-express/startnodeapp.sh
 
 ### install rsyslog:
-$ ansible-playbook -i inventory rsyslog_install.yml 
+$ ansible-playbook -i inventory rsyslog_install.yml
 
 ### make sure iptables isn't running:
 $ ansible webservers -i inventory -m shell -a "ufw allow 514/tcp" --sudo
@@ -34,5 +34,5 @@ mysql> show databases;
 | tech_challenge     |
 +--------------------+
 ```
-### creds provided to user ubuntu:
+creds provided to user ubuntu:
 mysql> grant ALL on tech_challenge.* to 'ubuntu'@'localhost' identified by 'passwd';
