@@ -23,6 +23,7 @@ $ ansible-playbook -i inventory rsyslog_install.yml
 $ ansible webservers -i inventory -m shell -a "ufw allow 514/tcp" --sudo
 
 ### MySQL DB installed on instance: ip-172-31-39-103
+```
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -32,6 +33,6 @@ mysql> show databases;
 | performance_schema |
 | tech_challenge     |
 +--------------------+
-
+```
 ### creds provided to user ubuntu:
 mysql> grant ALL on tech_challenge.* to 'ubuntu'@'localhost' identified by 'passwd';
