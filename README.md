@@ -29,7 +29,7 @@ $ ansible-playbook -i inventory rsyslog_install.yml
 ### make sure iptables isn't running:
 $ ansible webservers -i inventory -m shell -a "ufw allow 514/tcp" --sudo
 
-## MySQL DB installed on instance: ip-172-31-39-103
+## MySQL DB installed on instance: ec2-34-229-59-133.compute-1.amazonaws.com 
 ```
 mysql> show databases;
 +--------------------+
