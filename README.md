@@ -36,3 +36,13 @@ mysql> show databases;
 ```
 creds provided to user ubuntu:
 mysql> grant ALL on tech_challenge.* to 'ubuntu'@'localhost' identified by 'passwd';
+
+user ubuntu can now log into to db:
+```
+ubuntu@ip-172-31-39-103:~$ mysql -u ubuntu -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 52
+Server version: 5.5.58-0ubuntu0.14.04.1 (Ubuntu)
+
+```
