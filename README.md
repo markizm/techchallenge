@@ -5,7 +5,7 @@ Deployed using ansible 2.0.0.2
 Ansible Controller host: ec2-107-20-128-13.compute-1.amazonaws.com
 
 ### Using the Ansible Controller host, use this command to run the webserver:
-$ ansible webservers -i inventory -m shell -a "/usr/bin/node /home/ubuntu/hello-world-node-express/app.js"
+$ ansible webservers -i inventory -m shell -a "/home/ubuntu/hello-world-node-express/startnodeapp.sh"
 
 ## Steps taken to configure the webserver:
 
