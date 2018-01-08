@@ -29,6 +29,8 @@ $ ansible-playbook -i inventory rsyslog_install.yml
 ### make sure iptables isn't running:
 $ ansible webservers -i inventory -m shell -a "ufw allow 514/tcp" --sudo
 
+### Remote logging can be viewed on ec2-107-20-128-13.compute-1.amazonaws.com:/var/log/syslog
+
 ## MySQL DB installed on instance: ec2-34-229-59-133.compute-1.amazonaws.com 
 ```
 mysql> show databases;
@@ -53,3 +55,4 @@ Your MySQL connection id is 52
 Server version: 5.5.58-0ubuntu0.14.04.1 (Ubuntu)
 
 ```
+### Unfinished ELK cluster can be found on ec2-34-229-59-133.compute-1.amazonaws.com and ec2-34-226-222-101.compute-1.amazonaws.com
