@@ -55,4 +55,4 @@ Your MySQL connection id is 52
 Server version: 5.5.58-0ubuntu0.14.04.1 (Ubuntu)
 
 ```
-### Unfinished ELK cluster can be found on ec2-34-229-59-133.compute-1.amazonaws.com and ec2-34-226-222-101.compute-1.amazonaws.com
+### Unfinished ELK cluster can be found on http://ec2-54-173-129-114.compute-1.amazonaws.com/ 
